@@ -27,44 +27,16 @@ if "messages" not in st.session_state:
         with st.chat_message(message["role"]):
          st.write(message["content"])
 
-col1, col2 = st.columns([1, 5])
+st.title("click to speak")
 
-with col1:
-    # Mic button for Hindi voice input
-    voice_input = speech_to_text(
-        language='hi',  # Hindi language
-        start_prompt="🎙️",  # Mic icon
-        stop_prompt="⏹️",   # Stop icon
-        just_once=True,
-        key="hindi_mic"
-    )
-    
-    # Store voice input if received
-    if voice_input:
-        st.session_state.voice_text = voice_input
-        st.success(f"✅ {voice_input[:50]}...")  # Show preview
+text = speech_to_text(
+    language='hi-IN',
+    start_prompt="🎙️ Start",
+    stop_prompt="⏹️ Stop",
+    key="mic_test_unique"
+)
 
-with col2:
-    # Your existing chat input
-    user_input = st.chat_input("Ask about government schemes...")
-
-if st.session_state.voice_text:
-    user_input = st.session_state.voice_text
-    st.session_state.voice_text = ""  # Clear after using
-
-# Your existing processing logic (UNCHANGED)
-if user_input:
-    # Add user message
-    st.session_state.messages.append({"role": "user", "content": user_input})
-    
-    # Generate response (your existing logic)
-    response = f"Response to: {user_input}"
-    
-    # Add assistant response
-    st.session_state.messages.append({"role": "assistant", "content": response})
-    st.rerun()
-
-
+st.write("Result:", text)
 # ──────────────────────────────────────────────
 # CUSTOM CSS — Earthy India-inspired palette
 # ──────────────────────────────────────────────
@@ -924,7 +896,29 @@ with col_main:
 
     with tab2:
         st.info("🎤 अपनी आवाज़ में पूछें — एक WAV फ़ाइल अपलोड करें (हिंदी में बोलें)")
-        audio_file = st.file_uploader("WAV ऑडियो फ़ाइल अपलोड करें", type=["wav"])
+        st.markdown("🎤 बटन दबाएं और बोलें")
+
+voice_text = speech_to_text(
+    language='hi-IN',
+    start_prompt="🎙️ बोलें",
+    stop_prompt="⏹️ रोकें",
+    just_once=True,
+    use_container_width=True,
+    key="mic"
+)
+
+if voice_text:
+    st.success(f"🎤 आपने बोला: {voice_text}")
+
+    intent, scheme_data, confidence = chatbot_response(
+        voice_text, vectorizer, model
+    )
+
+    if intent:
+        st.markdown(f"**✅ आपकी जरूरत:** {scheme_data['label']}")
+        for name, elig, link in scheme_data["schemes"]:
+            link_html = f' — [🔗 वेबसाइट]({link})' if link else ""
+            st.markdown(f"- **{name}** | {elig}{link_html}")
 
         if audio_file:
             with st.spinner("आवाज़ पहचान रहे हैं..."):
