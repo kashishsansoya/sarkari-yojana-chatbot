@@ -817,6 +817,19 @@ def train_model():
             "scholarship late aati hai kya","meri fees pending hai kya govt help karegi",
             "study ke liye sponsor chahiye","financial problem ki wajah se padhai ruk gayi",
             "education ke liye govt scheme batao detail me",
+"scholarship apply karna hai","need scholarship urgently","fees bharne ke liye help chahiye",
+"student hu financial problem hai","college fees afford nahi ho rahi","education ke liye funding chahiye",
+"govt scholarship list batao","how to get scholarship in india","fees ke liye support chahiye",
+"study ke liye paisa nahi hai","mujhe scholarship mil sakti hai kya","poor student ke liye scheme",
+"loan ya scholarship better kya hai","education ke liye sponsor chahiye","padhai ke liye paisa arrange nahi ho raha",
+"govt education support details","scholarship ka result kab aata hai","fees waiver ka process kya hai",
+"scholarship ke liye documents","higher studies ke liye fund","study continue nahi ho pa rahi",
+"urgent education help chahiye","scholarship ke liye eligibility","college ke liye paisa arrange nahi ho raha",
+"kya mujhe govt help milegi","need help for education","student financial aid chahiye",
+"scholarship portal batao","education ke liye grant chahiye","free education scheme kaise milegi",
+"padhai ke liye loan lena hai","meri fees due hai help karo","student ke liye best scheme",
+"scholarship ke liye apply link","govt aid for students","mujhe education support chahiye",
+"scholarship kaise check kare","study ke liye help urgently","education fund kaise milega","mujhe padhai ke liye paise chahiye",
 
             # AGRICULTURE (80)
             "farmer loan scheme","crop subsidy","agriculture support scheme","kisan yojana",
@@ -854,6 +867,19 @@ def train_model():
             "govt se kisan ko subsidy kaise milti hai","kheti ke liye paise kaha se milege",
             "agriculture ke liye free training hai kya","kisan ke liye naye govt schemes kya hai",
             "fasal ke liye protection ka best tarika kya hai",
+"kisan loan apply kaise kare","crop insurance kaise milega","farming ke liye subsidy chahiye",
+"kheti me loss ho gaya","irrigation system chahiye","seed subsidy ka process",
+"tractor loan kaise milega","agriculture support chahiye","kisan credit card apply",
+"govt farming scheme batao","farming ke liye loan interest","crop damage compensation",
+"kheti ke liye paani problem","organic farming support","fertilizer subsidy chahiye",
+"small farmer ke liye help","govt se kisan ko kya milta hai","fasal barbad ho gayi",
+"agriculture training chahiye","farming ke liye grant","kisan ke liye best scheme",
+"soil testing kaise kare","drip irrigation scheme","kisan ke liye monthly income",
+"farming business start karna hai","mandi rate problem hai","crop protection kaise kare",
+"govt subsidy kaise milegi","kisan ke liye loan process","agriculture me profit kaise badhaye",
+"farming tools ke liye help","beej aur khaad ke liye paisa","agriculture scheme details",
+"kisan ke liye financial aid","govt farming support kya hai","crop ke liye insurance chahiye",
+"irrigation ke liye loan","kheti ke liye modern tools","kisan ke liye new schemes","kisan sambandhit scheme",
 
             # EMPLOYMENT (80)
             "I need a job","job for unemployed","employment scheme","work opportunities",
@@ -890,6 +916,19 @@ def train_model():
             "online job safe hai kya","govt job ke liye coaching free hai kya",
             "training ke baad placement milega kya","job ke liye registration kaha kare",
             "employment exchange kya hota hai","mujhe apna kaam start karna hai help",
+    "job chahiye urgently","kaam nahi mil raha","rojgar scheme batao","need job support",
+"part time job chahiye","work from home job","job ke liye apply kaise kare",
+"fresher job chahiye","skill training chahiye","online job opportunities",
+"income source chahiye","resume kaise banaye","job ke liye guidance",
+"govt job ka process","private job nahi mil rahi","earning kaise start kare",
+"freelancing kaise kare","internship chahiye","startup help chahiye",
+"business start karna hai","rojgar registration kaise kare","placement help chahiye",
+"job portal batao","skill india program join","ghar baithe job milegi kya",
+"daily income ka kaam","job ke liye qualification kam hai","career kaise choose kare",
+"job ke liye training","govt rojgar mela","online earning safe hai kya",
+"job ke liye best option","earning badhane ke tareeke","job ke liye support",
+"kaam ke liye experience nahi hai","resume strong kaise kare","stable income chahiye",
+"job ke liye help urgently","employment support chahiye","mujhe job chahiye",
 
             # WOMEN SUPPORT (80)
             "help for women","women empowerment scheme","support for girls","scheme for women safety",
@@ -925,7 +964,20 @@ def train_model():
             "mahila ke liye free education scheme kya hai","working women ke liye govt support kya hai",
             "mahila self employment ke liye kya help milti hai","ladkiyon ke liye safety apps ya schemes kya hai",
             "women ke liye financial independence kaise milegi","help for women",
-
+"women support chahiye","mahila loan scheme","beti ke liye scholarship",
+"widow pension kaise milegi","women ke liye job scheme","mahila ke liye business loan",
+"ladki ke liye education help","women safety scheme","ujjwala yojana details",
+"free gas connection chahiye","mahila ke liye training","women entrepreneur support",
+"mahila ke liye govt aid","ladki ki shaadi ke liye help","women ke liye startup fund",
+"mahila ke liye insurance","anganwadi scheme kya hai","mahila ke liye pension",
+"single mother help","women ke liye health scheme","mahila ke liye ration card",
+"women self help group loan","mahila ke liye microfinance","ladkiyon ke liye scheme",
+"women ke liye skill training","mahila ke liye housing scheme","women ke liye govt grant",
+"mahila ke liye free education","ladki ke liye hostel facility","women ke liye financial independence",
+"mahila ke liye bank scheme","jan dhan account for women","women ke liye subsidy",
+"mahila ke liye legal help","domestic violence help","women helpline number",
+"mahila ke liye support urgently","working women ke liye support","women ke liye govt programs",
+"ladki ke liye best scheme",
             # HEALTH (80)
             "health support","need medical help","hospital fees are too high","no money for treatment",
             "hospital ka kharcha nahi hai","doctor ke liye paise chahiye",
@@ -964,36 +1016,61 @@ def train_model():
             "hospital bill reduce kaise kare","free surgery kaha hoti hai",
             "govt health support kaise le"," free health checkup kaha available hai",
             "govt hospital me treatment kaise start kare"
+    "medical help chahiye","hospital bill bahut high hai","free treatment kaha milega",
+"ayushman card apply","health insurance kaise le","emergency medical help",
+"doctor fees afford nahi ho rahi","operation ke liye paisa chahiye","medicine mehengi hai help",
+"health scheme batao","govt hospital free hai kya","health card kaise banega",
+"insurance claim kaise kare","free checkup scheme","medical loan chahiye",
+"treatment ke liye fund","serious illness help","ambulance number kya hai",
+"healthcare subsidy chahiye","govt se ilaj ke liye help","free surgery kaha hoti hai",
+"health camp kaha lagta hai","doctor consultation free","emergency ke liye paisa",
+"insurance lena zaroori hai kya","health ke liye govt support","hospital admission help",
+"treatment ke liye donation","health ke liye best scheme","bimari ke liye paisa nahi hai",
+"insurance reject ho gaya","govt health scheme details","ilaj ke liye loan lena hai",
+"free ambulance service","hospital bill reduce kaise kare","health ke liye support urgently",
+"govt hospital ka process","health ke liye subsidy","medical emergency fund","healthcare ke liye help","healthcare schemes batao",
+"health se related schemes batao","health related yojana kya hai","health se judi schemes",
+"mujhe health se related schemes chahiye","health ke schemes batao","health yojana list",
+"health se related govt help","health schemes india","health se related koi yojana",
+"swasthya se related schemes","health aur ilaj ke liye scheme","health related govt yojana"
+
         ],
 
         "intent": (
-            ["scholarship"] * 80 +
-            ["agriculture"] * 80 +
-            ["employment"] * 80 +
-            ["women_support"] * 80 +
-            ["health"] * 80
+            ["scholarship"] * 120 +
+            ["agriculture"] * 120 +
+            ["employment"] * 120 +
+            ["women_support"] * 120 +
+            ["health"] * 132
+            
         )
     }
-
     df = pd.DataFrame(data)
 
     def clean_text(text):
-        text = text.lower()
+        text = text.lower().replace("-", " ").replace("_", " ")
         cleaned = ""
         for char in text:
             if char.isalnum() or char == " " or ("\u0900" <= char <= "\u097F"):
                 cleaned += char
-        return cleaned
+        return " ".join(cleaned.split())
 
     df["clean_text"] = df["text"].apply(clean_text)
     X_train, X_test, y_train, y_test = train_test_split(
         df["clean_text"], df["intent"], test_size=0.2, random_state=42
     )
 
-    vectorizer = TfidfVectorizer()
+    # token_pattern includes Devanagari Unicode block (\u0900-\u097F) so Hindi
+    # characters are NOT stripped before TF-IDF feature extraction.
+    vectorizer = TfidfVectorizer(
+        token_pattern=r"(?u)\b[\w\u0900-\u097F]+\b",
+        ngram_range=(1, 2),          # bigrams help capture multi-word Hindi phrases
+        min_df=1,
+        sublinear_tf=True,           # log-scaling reduces dominance of frequent terms
+    )
     X_train_vec = vectorizer.fit_transform(X_train)
     X_test_vec  = vectorizer.transform(X_test)
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=2000, C=5.0, solver="lbfgs")
     model.fit(X_train_vec, y_train)
     y_pred = model.predict(X_test_vec)
     acc = accuracy_score(y_test, y_pred)
@@ -1124,27 +1201,92 @@ schemes = {
 # CHATBOT LOGIC
 # ──────────────────────────────────────────────
 def clean_text(text):
-    text = text.lower()
+    """
+    Normalise text for TF-IDF:
+    - Lower-case everything.
+    - Keep ASCII alphanumeric, spaces, and Devanagari Unicode block.
+    - Replace hyphens/underscores with space (avoids unknown tokens).
+    - Collapse multiple spaces.
+    """
+    text = text.lower().replace("-", " ").replace("_", " ")
     cleaned = ""
     for char in text:
         if char.isalnum() or char == " " or ("\u0900" <= char <= "\u097F"):
             cleaned += char
-    return cleaned
+    return " ".join(cleaned.split())
+
+
+def has_devanagari(text):
+    """Return True if text contains any Devanagari characters."""
+    return any("\u0900" <= ch <= "\u097F" for ch in text)
 
 
 def chatbot_response(user_input, vectorizer, model):
     if not user_input.strip():
         return None, None, 0
+
+    # --- Robust language handling ---
+    # 1. Devanagari input → pass directly (TfidfVectorizer now handles it).
+    # 2. Hinglish (Latin script) → pass directly; model trained on it.
+    # 3. Pure English → translate to Hindi so it matches training vocabulary.
     try:
-        lang = detect(user_input)
-        if lang == "en":
-            translated = GoogleTranslator(source="en", target="hi").translate(user_input)
+        stripped = user_input.strip()
+        is_devanagari = has_devanagari(stripped)
+        if not is_devanagari:
+            try:
+                detected_lang = detect(stripped)
+            except Exception:
+                detected_lang = "hi"
+            if detected_lang == "en":
+                # Only translate confirmed English sentences
+                translated = GoogleTranslator(source="en", target="hi").translate(stripped)
+            else:
+                # Hinglish or ambiguous — model handles it natively
+                translated = stripped
         else:
-            translated = user_input
+            translated = stripped
     except Exception:
         translated = user_input
 
     cleaned = clean_text(translated)
+
+    # ── Keyword-override layer ──────────────────────────────────────────────
+    # When the user explicitly mentions a domain keyword, trust it over TF-IDF.
+    # This prevents Hinglish queries like "health se related schemes" from being
+    # mis-classified because generic tokens ("schemes batao") lean toward a
+    # majority class in training data.
+    _lower = user_input.lower()
+    _OVERRIDES = {
+        "health": [
+            "health", "swasthya", "hospital", "ilaj", "bimari", "ayushman",
+            "dawai", "medicine", "doctor", "treatment", "surgery", "medical",
+            "operation", "checkup", "स्वास्थ्य", "अस्पताल", "इलाज", "बीमारी",
+        ],
+        "agriculture": [
+            "kisan", "kisaan", "fasal", "kheti", "farming", "farm", "crop",
+            "beej", "seed", "fertilizer", "khaad", "irrigation", "sinchai",
+            "pm kisan", "किसान", "फसल", "खेती", "कृषि",
+        ],
+        "scholarship": [
+            "padhai", "scholarship", "fees", "fee", "college", "hostel",
+            "chhatravritti", "education loan", "vidya", "छात्रवृत्ति", "पढ़ाई",
+        ],
+        "employment": [
+            "naukri", "rojgar", "job", "kaam", "rozgaar", "employment",
+            "internship", "training", "skill", "berozgar", "नौकरी", "रोजगार",
+        ],
+        "women_support": [
+            "mahila", "beti", "ladki", "widow", "vidhwa", "ujjwala",
+            "anganwadi", "shg", "महिला", "बेटी", "लड़की",
+        ],
+    }
+    for _intent, _keywords in _OVERRIDES.items():
+        for _kw in _keywords:
+            if _kw in _lower:
+                # Found a strong domain signal — use it with high confidence
+                return _intent, schemes[_intent], 92.0
+    # ── End override ───────────────────────────────────────────────────────
+
     vec = vectorizer.transform([cleaned])
     intent = model.predict(vec)[0]
     confidence = float(model.predict_proba(vec).max()) * 100
